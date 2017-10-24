@@ -13,7 +13,7 @@ You can also use your own favico or Hackathon logo/header.
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>DubHacks Expo</title>
+  <title>HackGT Expo</title>
 
   <!-- Meta tags to eliminate caching. I don't totally get how these work, so you might not need all of them. cribbed from: http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers-->
   <meta http-equiv="cache-control" content="max-age=0" />
@@ -36,8 +36,8 @@ You can also use your own favico or Hackathon logo/header.
   <div class="container">
     <div id="header">
       <h1>
-        <a href="https://dubhacks17f.devpost.com/" title="DubHacks Expo">
-          <img src="logo.svg" style="vertical-align:middle; width:50%">
+        <a href="https://hackgt2017.devpost.com/" title="HackGT Expo">
+          <img src="logo.png" style="vertical-align:middle; width:50%">
         </a>
       <h1>
     </div>
@@ -52,6 +52,7 @@ You can also use your own favico or Hackathon logo/header.
       <thead>
         <tr>
           <th class="number">Table</th>
+          <th class="time">Time Slot</th>
           <th class="name">Project</th>
           <th class="prize">Sponsor Prizes</th>
         </tr>
@@ -60,6 +61,7 @@ You can also use your own favico or Hackathon logo/header.
         {{#data}}
           <tr>
             <td class="number">{{table}}</td>
+            <td class="time">{{time}}</th>
             <td class="name"><a href="{{{link}}}" target="_blank">{{project}}</a></td>
             <td class="prize">{{sponsors}}</td>
           </tr>
