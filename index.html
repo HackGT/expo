@@ -52,18 +52,18 @@ You can also use your own favico or Hackathon logo/header.
       <thead>
         <tr>
           <th class="number">Table</th>
-          <th class="time">Time Slot</th>
           <th class="name">Project</th>
           <th class="prize">Sponsor Prizes</th>
+          <th class="track">Track</th>          
         </tr>
       </thead>
       <tbody class="list">
         {{#data}}
           <tr>
             <td class="number">{{table}}</td>
-            <td class="time">{{time}}</th>
             <td class="name"><a href="{{{link}}}" target="_blank">{{project}}</a></td>
-            <td class="prize">{{sponsors}}</td>
+            <td class="prize">{{prize}}</td>
+            <td class="track">{{category}}</td>
           </tr>
         {{/data}}
       </tbody>
